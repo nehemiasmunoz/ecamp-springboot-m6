@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+<!--Agregamos namespace de thymeleaf-->
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Listado de productos</title>
 </head>
 <body>
+<!--Utilizamos directivas para recibir y mostrar los productos.-->
+<!--Ciclo-->
   <ul th:each="product : ${products}">
-    <li th:text="${product.name}"></li>
+<!--    Objeto productDTO y sus propiedades-->
+      <li th:text="${product.name}"></li>
   </ul>
 </body>
 </html>

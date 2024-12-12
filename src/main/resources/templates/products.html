@@ -28,7 +28,7 @@
                 <td th:text="${product.price()}"></td>
                 <td th:text="${product.description()}"></td>
 <!--            Texto dinamico en base a propiedad boleana-->
-                <td th:text="${product.available()} ? 'En stock': 'Sin stock'"></td>
+                <td th:text="${product.stock()} > 0? 'En stock': 'Sin stock'"></td>
             </tr>
           </tbody>
       </table>

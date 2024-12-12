@@ -5,6 +5,6 @@ public record ProductDTO(
         String name,
         String description,
         double price,
-        boolean available
+        long stock
 ) {
 }
